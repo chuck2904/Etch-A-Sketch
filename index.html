@@ -6,8 +6,33 @@
 	<meta charset="UTF-8"/>
 
 	<style>
-		.float-left{
-    		float: left;
+		
+		#sketch-container{
+			display:grid;
+			background-color:;
+			width: 500px;
+			height: 500px;
+			margin-left: auto;
+  			margin-right: auto;
+  			border: 1px solid black;
+		}
+
+		div div{
+			display:table;
+			table-layout: fixed;
+			margin: none; 		
+    		width: 100%;
+    		height: 100%;
+    		border:; 	
+		}
+
+		div div div{
+			display: table-cell;
+			border: 0px solid black;
+			margin: none;
+    		background-color:;
+    		width: auto;
+    		height: auto;	
 		}
 	</style>
 
@@ -21,40 +46,16 @@
  
 
 
-	<h1>Welcome to Rock-Paper-Scissors Online (RPS)</h1>
-	<h3>Please select your move below. The computer will play automatically (random selection)</h3>
+	<h1 style="text-align:center;">Welcome to Hetch-A-Sketch Online (HAS)</h1>
+	<h3 style="text-align:center;">Simply mouse over the square to color it.</h3>
+	<h4 style="text-align:center;">Color Pick:
+		<input type="color" id="colorPicker" name="head" value="#000000">
+	</h4>
 
-	<div>
-		<button id="rock" type="button"><img src="./icons/rock.jpg"></button>
-		<button id="paper" type="button"><img src="./icons/paper.jpg"></button>
-		<button id="scissors" type="button"><img src="./icons/scissors.jpg"></button>
-	</div>
-
-	<div>
-		<div> 
-			Your Score:
-			<div id= "your-score">0</div>
-		</div>
+	<div id="sketch-container">
 		
-		<div> 
-			Computer Score: 
-			<div id= "computer-score">0</div>
-		</div>
-
-		<div> 
-			Ties: 
-			<div id= "ties-score">0</div>
-		</div>			
-	</div>
-
-	<div>
-		Game Details:
-		<ul id="results"></ul>
 	</div>
 		
-
-
-
 </body>
 
 <script src="myscripts.js"></script>
